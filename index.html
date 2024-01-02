@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h2 id="game-heading"><center>Simon Game</center></h2>
+  <h1 id="level-title">Press Any Key to Start</h1>
+  <div class="container">
+    <div lass="row">
+      
+      <div type="button" id="green" class="btn green">
+        
+      </div>
+
+      <div type="button" id="red" class="btn red">
+        
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div type="button" id="yellow" class="btn yellow">
+        
+      </div>
+      <div type="button" id="blue" class="btn blue">
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="popup" onclick="popUpFunction()">Click here to show/hide Game Rules
+    <span class="popuptext" id="myPopup">
+      Slide the ON/OFF switch to ON, the Game Selector switch to "1" and the Skill Level switch to 1,2, 3 or 4.
+      The game starts with Level 1, Press any key on keyboard to START the game.
+      <br>
+      After starting the game. Simon will give the first signal. Repeat the signal by pressing the same color button.
+      <br>
+      Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color button, in order.
+      <br>
+      Simon will duplicate these first two signals and add one.
+      <br>
+      Continue playing as long as you can repeat each sequence of sig- nals correctly.
+      <br>
+      If you fail to repeat a sequence exactly, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.
+      <br>
+      To restart the game, press any key.
+    </span>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/game.js"></script>
+</body>
+
+</html>
